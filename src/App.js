@@ -2,7 +2,7 @@
 import {BrowserRouter as Router, Route, Switch  } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 
-// import RingLoader from "react-spinners/RingLoader";
+import RingLoader from "react-spinners/RingLoader";
 import { useState } from "react";
 import { useEffect } from "react";
 // import About from "./components/About";
@@ -20,7 +20,7 @@ useEffect(()  =>{
   setLoading(true);
   setTimeout(() =>{
     setLoading(false);
-  }, 9000);
+  }, 8000);
 }, []);
 
   return (
@@ -28,7 +28,7 @@ useEffect(()  =>{
       <div className="App">
     <Switch>
       <Route exact path="/" >
-      <Suspense fallback={ <div loading={loading}  className="loading"> Loading...</div>}>
+      <Suspense fallback={ <div  className="loading"> <RingLoader  loading={loading} color="black" size={80}  /></div>}>
       <Home  />
       </Suspense>
      
