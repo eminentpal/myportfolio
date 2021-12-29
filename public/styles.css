@@ -8,7 +8,19 @@ body{
     padding: 0px;
     
 }
+html {
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
 
+.sticky {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    
+}
 
 .loading{
     background-color: #f6f5f5;
@@ -44,7 +56,7 @@ section{
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 60px;
     background-color: #ffffff;
@@ -55,6 +67,7 @@ nav {
 
 nav ul {
     display: flex;
+    
 
 }
 
@@ -64,6 +77,17 @@ nav ul li {
     color: #505050;
     font-size: 15px;
     font-weight: 700;
+   
+}
+
+
+nav ul a {
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+    
 
 }
 
@@ -283,14 +307,116 @@ button:active{
     flex-direction: column;
 }
 
+
+/* .box1{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.portfolio1{
+    width: 300px;
+    height: 300px;
+    background-image: url("images/eminentwears.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+
+}
+
+.portfolio2{
+    width: 300px;
+    height: 300px;
+    background-image: url("images/mytodolistapp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+
+}
+
+.portfolio3{
+    width: 300px;
+    height: 300px;
+    background-image: url("images/eminentbooks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+
+}
+
+
+
+/* .portfolio1 img{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+  
+} */
+
+
+.showDiv {
+   display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.877);
+    visibility: hidden;
+  
+
+}
+.showDiv p {
+    text-align: center;
+    width: 250px;
+    margin: 13px 0 13px;
+    font-size: 16px;
+    color: #474141;
+  
+}
+
+.showDiv button {
+    width: 100px;
+    height: 30px;
+    background-color: #181212;
+    border: none;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.portfolio1:hover .showDiv{
+    visibility: visible;
+}
+.portfolio2:hover .showDiv{
+    visibility: visible;
+}
+.portfolio3:hover .showDiv{
+    visibility: visible;
+}
 .box-container{
     display: flex;
     justify-content: space-between;
 }
 
-.box-1 {
+
+.box-1Main {
     background-image: url(images/services-1.png);
 }
+
 
 .box-2{
     background-image: url(images/services-2.png);
@@ -299,6 +425,26 @@ button:active{
 .box-3{
     background-image: url(images/servies-3.png);
 }
+.porfolio-1 {
+    
+    width: 300px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.porfolio-1 img{
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+}
+
 
 .box-1 span,
 .box-2 span,
@@ -313,6 +459,8 @@ button:active{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
+
+
 
 .box-1 p:nth-child(2){
     color: #ffffff;
@@ -356,15 +504,38 @@ button:active{
     color: #8f8f8f;
 }
 
-.box-1 button{
+
+.porfolio-1 p:nth-child(2) {
+    color: #1a1919;
+}
+.porfolio-1 p:nth-child(3) {
+    color: #8f8f8f;
+}
+
+
+
+.porfolio-1 button{
+    width: 100px;
+    height: 30px;
+    background-color: #181212;
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.box-1Main button{
     width: 100px;
     height: 30px;
     background-color: #ffffff;
     border: none;
+
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
-
 .box-2 button {
     width: 100px;
     height: 30px;
@@ -372,6 +543,7 @@ button:active{
     border: none;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .box-3 button{
@@ -381,6 +553,7 @@ button:active{
     border: none;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .contact-me{
@@ -624,6 +797,10 @@ footer p:nth-child(2){
         background-color: #f7f7f7;
     }
 
+    .porfolio-1 {
+        margin-bottom: 50px;
+    }
+
     .model {
         display: none;
     }
@@ -653,7 +830,10 @@ footer p:nth-child(2){
     
     }
     
-
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
     nav ul {
         
         margin: 0px;
@@ -687,6 +867,23 @@ footer p:nth-child(2){
     }
     
     nav ul li a:hover {
+        color: #faf3f3;
+    }
+
+
+    nav ul a {
+        padding: 10px;
+    }
+ 
+    nav ul  a {
+        padding: 10px;
+        font-family: calibri;
+        font-size: 1.4em ;
+        text-transform: uppercase;
+        color: #5c5c5c;
+    }
+    
+    nav ul a:hover {
         color: #faf3f3;
     }
 

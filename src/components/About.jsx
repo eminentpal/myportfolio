@@ -1,9 +1,21 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { useParams } from 'react-router'
 
-const About = () => {
+const About = ({location}) => {
+const shortLink = useParams()
+
+
+// useEffect(() => {
+//     if(shortLink) {
+//         window.location.replace("https://www.w3schools.com")
+//     }
+// }, [shortLink])
+
+
+
     return (
         <div className="aboutapp" >
-            <h1>Hello</h1>
+            
         </div>
     )
 }

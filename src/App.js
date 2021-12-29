@@ -3,9 +3,12 @@ import {BrowserRouter as Router, Route, Switch  } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 
 import RingLoader from "react-spinners/RingLoader";
+
 import { useState } from "react";
+
 import { useEffect } from "react";
-// import About from "./components/About";
+import About from "./components/About";
+
 
 const Home = lazy(()=> import("./components/Home"));
 
@@ -33,8 +36,9 @@ useEffect(()  =>{
       </Suspense>
      
       </Route>
-     {/* <Route exact path="/about" >
-     <Suspense fallback={ <div  className="aboutapp"> <RingLoader css={loadingStyle} loading color="blue" size={60}  /></div>}>
+
+     {/* <Route exact path="/about/:id" >
+     <Suspense fallback={ <div  className="aboutapp"> <RingLoader loading={loading} loading color="blue" size={60}  /></div>}>
       <About  />
       </Suspense>
      </Route> */}

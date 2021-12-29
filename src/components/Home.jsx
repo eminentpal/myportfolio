@@ -6,16 +6,16 @@ import Header from "./Header"
 const Home = () => {
     return (
         <>
-           <section  className="contact">
+           <section  className="contact" id= 'home' >
            <Header />
-              <div  className="text-container" >
+           <div  className="text-container" >
                 <p> Hello,</p>
-                <p> I'm Ezie .C,</p>
-                <p> I am a FrontEnd Developer, <br /> Blogger & Digital Marketer.</p>
+                <p> I'm Ezie .I,</p>
+                <p> I am a FrontEnd Developer, <br /> Blogger & IT Consultant.</p>
                 <button class="hire-btn">Hire Me</button>
                 <button class="down-cv"> Download CV</button>
                 </div>
-                <img  src="images/model.png" class="model" alt="model" />
+                <img  src="images/me.png" class="model" alt="model" />
               
 
            </section> 
