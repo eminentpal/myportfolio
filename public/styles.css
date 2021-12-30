@@ -808,8 +808,15 @@ footer p:nth-child(2) {
     content: "\f00d";
     font-family: fontAwesome;
     position: absolute;
-    top: 0;
-    right: 0px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+    right: 10px;
   }
   nav ul li {
     padding: 0px;
@@ -862,7 +869,7 @@ footer p:nth-child(2) {
     display: flex !important;
   }
 
-  /*mobile navar ends*/
+  /*mobile navbar ends*/
 
   .about-container {
     top: 0px;
