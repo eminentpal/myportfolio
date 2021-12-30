@@ -20,14 +20,16 @@ const Body = () => {
 
     <div className="about-text"  >
         <p> About Me</p>
-        <p>Developer & Designer</p>
-        <p>A hardworking Frontend developer with over 2yrs experience in web development, with skills in HTML, CSS, MongoDB and Javascript(REACTJS). Also
-         have good understanding of backend framework like Nodejs. </p>
-            <p>I have worked on a number of projects which you can see as you scroll down. </p>
+        <p>Software Developer</p>
+        <p>A hardworking Softtware developer (Frontend) with over 3yrs experience in webapps development. With skills in HTML, CSS, Material Ui, Boostrap, MongoDB and Javascript (ReactJs, NextJs). Also
+         have good experience using backend framework, Nodejs. </p>
+            <p >I love challenges, working with details, finding solution with great zeal to learn new technology and
+            adapt to any working environment I find myself.
+            I have worked on a number of projects which you can see as you scroll down. </p>
      
                 {/* <!--Button--> */}
-              <a href="https://wa.me/2348140035918">  <button>Hire Me</button> </a>
-                <button>Download CV</button>
+              <a href="https://wa.me/2348140035918">  <button style={{fontWeight:"bold", fontSize:"12px"}} >Hire Me</button> </a>
+                <button  style={{fontWeight:"bold", fontSize:"12px"}} >Download CV</button>
     </div>
 
     </div>

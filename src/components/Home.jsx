@@ -11,8 +11,10 @@ const Home = () => {
            <div  className="text-container" >
                 <p> Hello,</p>
                 <p> I'm Ezie .I,</p>
-                <p> I am a FrontEnd Developer, <br /> Blogger & IT Consultant.</p>
-                <button class="hire-btn">Hire Me</button>
+                <p> I am a Software Developer, <br /> Blogger & IT Consultant.</p>
+               
+                <a  href="https://wa.me/2348140035918">  <button class="hire-btn">Hire Me</button> </a>
+                
                 <button class="down-cv"> Download CV</button>
                 </div>
                 <img  src="images/me.png" class="model" alt="model" />
