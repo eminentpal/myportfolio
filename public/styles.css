@@ -303,7 +303,7 @@ button:active {
 } */
 
 .portfolio1 {
-  width: 300px;
+  width: 250px;
   height: 300px;
   background-image: url("images/eminentwears.png");
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@ button:active {
 }
 
 .portfolio2 {
-  width: 300px;
+  width: 250px;
   height: 300px;
   background-image: url("images/mytodolistapp.png");
   background-repeat: no-repeat;
@@ -323,9 +323,19 @@ button:active {
 }
 
 .portfolio3 {
-  width: 300px;
+  width: 250px;
   height: 300px;
   background-image: url("images/eminentbooks.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.portfolio4 {
+  width: 250px;
+  height: 300px;
+  background-image: url("images/shutly.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
@@ -380,6 +390,9 @@ button:active {
 .portfolio3:hover .showDiv {
   visibility: visible;
 }
+.portfolio4:hover .showDiv {
+  visibility: visible;
+}
 .box-container {
   display: flex;
   justify-content: space-between;
@@ -397,7 +410,7 @@ button:active {
   background-image: url(images/servies-3.png);
 }
 .porfolio-1 {
-  width: 300px;
+  width: 200px;
   height: 380px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -784,7 +797,7 @@ footer p:nth-child(2) {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 15px;
   }
 
   nav ul {
@@ -902,6 +915,18 @@ footer p:nth-child(2) {
     height: 33px;
   }
 
+  .portfolio1 {
+    width: 300px;
+  }
+  .portfolio2 {
+    width: 300px;
+  }
+  .portfolio3 {
+    width: 300px;
+  }
+  .portfolio4 {
+    width: 300px;
+  }
   footer p:nth-child(2) {
     width: 90%;
   }
